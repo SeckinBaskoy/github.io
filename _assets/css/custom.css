@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:wght@100;400;500;700;900&display=swap');
+
+/* Genel Tanımlamalar */
+
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', 'Roboto', sans-serif;
+	font-size:12pt;
+}
+
+body {
+	background:#ffffff;
+	height: 100vh;
+}
+
+.vertical-align-middle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%; 
+}
+
+
+#content {
+	margin-top:20px;
+	background: #f8f8f8;
+	border:1px solid #222222;
+	padding:10px;
+}
+
+h1, h2, h3, h4, h5 {
+	color:#222222;
+}
+/*  BÖLÜM TANIMLAMALARI */
+
+header {
+	border-bottom:2px solid #000;
+	content: '';
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+article {
+	color:#222222;
+}
+
+#content h2 {
+	margin-left: 10px;
+}
+#content img {
+	max-width: 40%;
+	float: left;
+	padding-right: 10px;
+}
+
+/* Mobil cihazlar için medya sorgusu */
+@media (max-width: 767px) {
+	#content img {
+		max-width: 100%;
+		float: none;
+		padding-right: 0;
+	}
+}
+
+/* Daha büyük ekranlar için medya sorgusu */
+@media (min-width: 768px) {
+	#content img {
+		max-width: 50%;
+	}
+}
+
+
+#content p {
+	text-align: justify;
+}
+
+#content2 {
+	padding-top:10px;
+	margin-top:10px;
+}
+#content2 h3 {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#kutu1 #kutu2 #kutu3 h1,h2,h3,h4,h5 {
+	color:#3498DB;
+}
+.alt_cizgi {
+	border: 2px solid #000;
+	opacity: 0.2;
+	width:50%;
+	transition: All 5s;
+	margin-left:auto;
+	margin-right:auto;
+}
+#kutu1 {
+	min-height:25vh;
+}
+#kutu2 {
+	border-right:1px solid #3498DB;
+	border-left:1px solid #3498DB;
+	min-height:25vh;
+}
+#kutu2 ul li {
+	line-height: 1.6em;
+	padding-bottom: 5px;
+	padding-top:5px;
+}
+#kutu3 {
+	min-height:25vh;
+}
+
+
+/*  SOSYAL MEDYA BAĞLANTILARI */
+
+#social {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: flex-end;
+}
+
+#social li {
+	margin-left: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+	#social {
+		justify-content: center;
+	}
+
+	#social li {
+		margin: 0 5px; /* Mobil cihazlarda yatay boşluk ayarı */
+	}
+}
+
+
+footer {
+	margin-top:24px;
+	margin-bottom:24px;
+	padding-top:12px;
+	padding-bottom:12px;
+}
+
+
+/* Navigasyom Tanımlamalar */
+.nav-item {
+	text-transform: uppercase;
+}
+.nav-item a {
+	color:#222;
+	font-weight: 400;
+	font-family: 'Roboto',sans-serif;
+	font-size:14pt;
+}
+.nav-item a:hover {
+	color:#222;
+	font-weight: 700;
+	font-family: 'Roboto',sans-serif;
+	font-size:14pt;
+	/*text-decoration: underline;*/
+}
+
+
+.etiket-bulutu {
+	width: 400px; 
+	height: 400px; 
+	border-radius: 50%;
+	position: relative;
+	overflow: hidden;
+}
+
+.etiket {
+	position: absolute;
+	padding: 5px 10px;
+	white-space: nowrap;
+	text-transform: capitalize;
+
+}
