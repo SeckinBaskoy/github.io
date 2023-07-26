@@ -1,0 +1,25 @@
+# .config.yml
+redirects:
+  # Almanca bağlantılar için yönlendirmeler
+  - from: /de
+    to: /index-de.html
+  - from: /de/portfolio
+    to: /portfolio-de.html
+  - from: /de/kommunikation
+    to: /iletisim-de.html
+
+  # İngilizce bağlantılar için yönlendirmeler
+  - from: /en
+    to: /index-en.html
+  - from: /en/portfolio
+    to: /portfolio-en.html
+  - from: /en/contact
+    to: /iletisim-en.html
+
+  # Türkçe bağlantılar için yönlendirmeler (isteğe bağlı, eklemek isterseniz)
+  - from: /tr
+    to: /index.html
+  - from: /tr/portfolio
+    to: /portfolio.html
+  - from: /tr/iletisim
+    to: /iletisim.html
