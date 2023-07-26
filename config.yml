@@ -1,3 +1,5 @@
+# .config.yml
+
 redirects:
   # Almanca bağlantılar için yönlendirmeler
   - from: /de
